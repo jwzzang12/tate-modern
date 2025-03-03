@@ -3,7 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Tate Modern | Tate</title>
+    <style>
+      .material-symbols-rounded {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .material-symbols-rounded.fill {
+        font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        clip-path: inset(50%);
+        white-space: nowrap;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header id="header">
+      <a href="#" id="logo">
+        <img draggable="false" loading="lazy" src="./images/tate-logo.svg" alt="tate logo" />
+      </a>
+      <nav id="gnb-main">
+        <h2 class="sr-only">gnb</h2>
+        <div class="gnb-main__left">
+          <ul>
+            <li><a href="#">What's on</a></li>
+            <li>
+              <a href="#">Art<span class="material-symbols-rounded" aria-hidden="true"> keyboard_arrow_down </span></a>
+            </li>
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </div>
+        <div class="gnb-main__right">
+          <ul>
+            <li>
+              <a href="#"><span class="material-symbols-rounded" title="search"> search </span></a>
+            </li>
+            <li><a href="#">Become a member</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="hero__content">
+          <div class="hero__item"><span>FREE</span></div>
+          <div class="hero__item"><h1>TATE MODERN</h1></div>
+          <div class="hero__item"><h2>Free admission</h2></div>
+          <div class="hero__item"><p>Last entry 17.30</p></div>
+          <div class="hero__item">
+            <span>OPENING TIMES</span>
+            <p>Monday to Sunday 10.00-18.00</p>
+          </div>
+          <div class="hero__item">
+            <p>OPEN TODAY 10.00-18.00</p>
+          </div>
+          <div class="hero__item"><p>Bankside, London SE1 9TG</p></div>
+        </div>
+      </section>
+      <!-- hero end -->
+
+      <nav id="gnb-sticky">
+        <ul>
+          <li><a href="#">What's on</a></li>
+          <li><a href="#">Visit the free collection</a></li>
+          <li><a href="#">Admission information</a></li>
+          <li><a href="#">Visiting tips</a></li>
+          <li><a href="#">In Tate Modern</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </nav>
+      <!-- sticky nav end -->
+
+      <section id="explore">
+        <div class="exlplore__content">
+          <div class="explore__heading">Explore modern and contemporary art from aronud the world</div>
+          <p>
+            See some of the world’s most exciting modern and contemporary art at Tate Modern. Enjoy innovative works that have shaped art as we know
+            it. Our gallery is free to visit. On display are paintings, sculptures and large-scale installations from artists around the world
+            including
+            <span class="blue">Pablo Picasso</span>, <span class="blue">Yayoi Kusama</span> and <span class="blue">Henri Matisse</span>. Explore the
+            iconic Turbine Hall alongside our underground Tanks, a striking space dedicated to live performances and video.
+            <br />
+            Members enjoy unlimited free entry to exhibitions with no need to book.
+          </p>
+          <button class="explore__button">Download the Tate Modern map [PDF, 1240 Kb]</button>
+        </div>
+        <div class="explore__artwork">
+          <img src="./images/ch9DUCU.jpg" alt="Clido Meireles, Babel(2001)" />
+          <div class="explore__artwork-info">
+            <div>Clido Meireles</div>
+            <div><span class="blue">Bable</span>(2001)</div>
+            <div>Tate</div>
+            <div><span class="blue">© Cildo Meireles</span></div>
+          </div>
+        </div>
+      </section>
+      <!-- explore end -->
+
+      <section id="exhibition">
+        <h2>What's on</h2>
+        <div class="exhibition__content">
+          <div class="exhibition__item">
+            <div class="exhibition__img-box"><img src="./images/exhibition/Mike_Kelley_1.jpg" alt="Mike Kelley: Ghost and Spirit" /></div>
+            <span class="exhibition__mark">Exhibition</span>
+            <div class="exhibition__title">Mike Kelley: Ghost and Spirit</div>
+            <p class="exibiton__desc">The first major UK exhibition of American artist Mike Kelley</p>
+            <div class="exhibition__info">
+              <span class="material-symbols-rounded" aria-hidden="true"> location_on </span>
+              <div class="exhibition__location">Tate Modern</div>
+              <span class="material-symbols-rounded fill" aria-hidden="true"> calendar_today </span>
+              <div class="exhibition__date">Until 9 Mar 2025</div>
+            </div>
+          </div>
+          <div class="exhibition__item">
+            <div class="exhibition__img-box"><img src="./images/exhibition/YAIH-Photograph01colDiep.jpg" alt="Anthony McCall: Solid Light" /></div>
+            <span class="exhibition__mark">Exhibition</span>
+            <div class="exhibition__title">Anthony McCall: Solid Light</div>
+            <p class="exibiton__desc">Step inside sculptures of light</p>
+            <div class="exhibition__info">
+              <span class="material-symbols-rounded" aria-hidden="true"> location_on </span>
+              <div class="exhibition__location">Tate Modern</div>
+              <span class="material-symbols-rounded fill" aria-hidden="true"> calendar_today </span>
+              <div class="exhibition__date">Until 27 Apr 2025</div>
+            </div>
+          </div>
+          <div class="exhibition__item">
+            <div class="exhibition__img-box">
+              <img src="./images/exhibition/_AR54334.jpg" alt="Electric Dreams: Art and Technology Before the Internet" />
+            </div>
+            <span class="exhibition__mark">Exhibition</span>
+            <div class="exhibition__title">Electric Dreams: Art and Technology Before the Internet</div>
+            <p class="exibiton__desc">Enter a dreamscape of machines, movement, and captivating installations that play with your perception</p>
+            <div class="exhibition__info">
+              <span class="material-symbols-rounded" aria-hidden="true"> location_on </span>
+              <div class="exhibition__location">Tate Modern</div>
+              <span class="material-symbols-rounded fill" aria-hidden="true"> calendar_today </span>
+              <div class="exhibition__date">Until 1 Jun 2025</div>
+            </div>
+          </div>
+        </div>
+        <button class="btn">All exhibitions and events at Tate Modern<span class="material-symbols-rounded"> arrow_forward </span></button>
+      </section>
+      <!-- exhibition end -->
+
+      <section id="collection">
+        <h2>Visit the free collection</h2>
+        <div class="collection__content">
+          <div class="collection__item">
+            <div class="collection__img-box">
+              <img src="./images/collection/6jYy0Ga.jpg" alt="Performer and Participant" />
+            </div>
+            <div class="collection__title">Performer and Participant</div>
+            <p class="exibiton__desc">Discover how artists working between the 1960s and the 1990s opened up new spaces for participation</p>
+            <span class="collection__mark">FREE</span>
+          </div>
+          <div class="collection__item">
+            <div class="collection__img-box">
+              <img src="./images/collection/T15640_Official_View.jpg" alt="Materials and Objects" />
+            </div>
+            <div class="collection__title">Materials and Objects</div>
+            <p class="exibiton__desc">Discover artists from Tate's collection who have embraced new and unusual materials and methods</p>
+            <span class="collection__mark">FREE</span>
+          </div>
+          <div class="collection__tour">
+            <div class="collection__tour__heading">Interested in a tour of the collection?</div>
+            <div class="collection__tour__button">Book a private tour<span class="material-symbols-rounded"> arrow_forward </span></div>
+          </div>
+          <div class="collection__item">
+            <div class="collection__img-box">
+              <img src="./images/collection/_d818906_ret_media_networks_resized_2bCQuZG.jpg" alt="Media Networks" />
+            </div>
+            <div class="collection__title">Media Networks</div>
+            <p class="exibiton__desc">See how artists in Tate’s collection have responded to the impact of mass media</p>
+            <span class="collection__mark">FREE</span>
+          </div>
+        </div>
+        <button class="btn">Explore all displays<span class="material-symbols-rounded"> arrow_forward </span></button>
+      </section>
+      <!-- collection end -->
+    </main>
+  </body>
 </html>
