@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <script src="https://kit.fontawesome.com/e46a16ab6a.js" crossorigin="anonymous"></script>
     <title>Tate Modern | Tate</title>
     <style>
       .material-symbols-rounded {
@@ -32,7 +33,7 @@
       <a href="#" id="logo">
         <img draggable="false" loading="lazy" src="./images/tate-logo.svg" alt="tate logo" />
       </a>
-      <nav id="gnb-main">
+      <nav id="gnb">
         <h2 class="sr-only">gnb</h2>
         <div class="gnb-main__left">
           <ul>
@@ -73,7 +74,7 @@
       </section>
       <!-- hero end -->
 
-      <nav id="gnb-sticky">
+      <nav id="nav-sticky">
         <ul>
           <li><a href="#">What's on</a></li>
           <li><a href="#">Visit the free collection</a></li>
@@ -92,20 +93,20 @@
             See some of the world’s most exciting modern and contemporary art at Tate Modern. Enjoy innovative works that have shaped art as we know
             it. Our gallery is free to visit. On display are paintings, sculptures and large-scale installations from artists around the world
             including
-            <span class="blue">Pablo Picasso</span>, <span class="blue">Yayoi Kusama</span> and <span class="blue">Henri Matisse</span>. Explore the
-            iconic Turbine Hall alongside our underground Tanks, a striking space dedicated to live performances and video.
+            <a href="#" class="blue">Pablo Picasso</a>, <a href="#" class="blue">Yayoi Kusama</a> and <a href="#" class="blue">Henri Matisse</a>.
+            Explore the iconic Turbine Hall alongside our underground Tanks, a striking space dedicated to live performances and video.
             <br />
             Members enjoy unlimited free entry to exhibitions with no need to book.
           </p>
-          <button class="explore__button">Download the Tate Modern map [PDF, 1240 Kb]</button>
+          <button class="btn black-border" type="button">Download the Tate Modern map [PDF, 1240 Kb]</button>
         </div>
         <div class="explore__artwork">
           <img src="./images/ch9DUCU.jpg" alt="Clido Meireles, Babel(2001)" />
           <div class="explore__artwork-info">
             <div>Clido Meireles</div>
-            <div><span class="blue">Bable</span>(2001)</div>
+            <div><a href="#" class="blue">Bable</a>(2001)</div>
             <div>Tate</div>
-            <div><span class="blue">© Cildo Meireles</span></div>
+            <div><a href="#" class="blue">© Cildo Meireles</a></div>
           </div>
         </div>
       </section>
@@ -115,7 +116,7 @@
         <h2>What's on</h2>
         <div class="exhibition__content">
           <div class="exhibition__item">
-            <div class="exhibition__img-box"><img src="./images/exhibition/Mike_Kelley_1.jpg" alt="Mike Kelley: Ghost and Spirit" /></div>
+            <div class="exhibition__img-container"><img src="./images/exhibition/Mike_Kelley_1.jpg" alt="Mike Kelley: Ghost and Spirit" /></div>
             <span class="exhibition__mark">Exhibition</span>
             <div class="exhibition__title">Mike Kelley: Ghost and Spirit</div>
             <p class="exibiton__desc">The first major UK exhibition of American artist Mike Kelley</p>
@@ -127,7 +128,9 @@
             </div>
           </div>
           <div class="exhibition__item">
-            <div class="exhibition__img-box"><img src="./images/exhibition/YAIH-Photograph01colDiep.jpg" alt="Anthony McCall: Solid Light" /></div>
+            <div class="exhibition__img-container">
+              <img src="./images/exhibition/YAIH-Photograph01colDiep.jpg" alt="Anthony McCall: Solid Light" />
+            </div>
             <span class="exhibition__mark">Exhibition</span>
             <div class="exhibition__title">Anthony McCall: Solid Light</div>
             <p class="exibiton__desc">Step inside sculptures of light</p>
@@ -139,7 +142,7 @@
             </div>
           </div>
           <div class="exhibition__item">
-            <div class="exhibition__img-box">
+            <div class="exhibition__img-container">
               <img src="./images/exhibition/_AR54334.jpg" alt="Electric Dreams: Art and Technology Before the Internet" />
             </div>
             <span class="exhibition__mark">Exhibition</span>
@@ -153,7 +156,9 @@
             </div>
           </div>
         </div>
-        <button class="btn">All exhibitions and events at Tate Modern<span class="material-symbols-rounded"> arrow_forward </span></button>
+        <button class="btn" type="button">
+          All exhibitions and events at Tate Modern<span class="material-symbols-rounded"> arrow_forward </span>
+        </button>
       </section>
       <!-- exhibition end -->
 
@@ -161,7 +166,7 @@
         <h2>Visit the free collection</h2>
         <div class="collection__content">
           <div class="collection__item">
-            <div class="collection__img-box">
+            <div class="collection__img-container">
               <img src="./images/collection/6jYy0Ga.jpg" alt="Performer and Participant" />
             </div>
             <div class="collection__title">Performer and Participant</div>
@@ -169,7 +174,7 @@
             <span class="collection__mark">FREE</span>
           </div>
           <div class="collection__item">
-            <div class="collection__img-box">
+            <div class="collection__img-container">
               <img src="./images/collection/T15640_Official_View.jpg" alt="Materials and Objects" />
             </div>
             <div class="collection__title">Materials and Objects</div>
@@ -181,7 +186,7 @@
             <div class="collection__tour__button">Book a private tour<span class="material-symbols-rounded"> arrow_forward </span></div>
           </div>
           <div class="collection__item">
-            <div class="collection__img-box">
+            <div class="collection__img-container">
               <img src="./images/collection/_d818906_ret_media_networks_resized_2bCQuZG.jpg" alt="Media Networks" />
             </div>
             <div class="collection__title">Media Networks</div>
@@ -189,9 +194,526 @@
             <span class="collection__mark">FREE</span>
           </div>
         </div>
-        <button class="btn">Explore all displays<span class="material-symbols-rounded"> arrow_forward </span></button>
+        <button class="btn" type="button">Explore all displays<span class="material-symbols-rounded"> arrow_forward </span></button>
       </section>
       <!-- collection end -->
+
+      <section id="members">
+        <h2>Tate members</h2>
+        <div class="members__container">
+          <div class="members__container__heading">Free entry to every exhibition</div>
+          <button class="members__button" type="button">Join today<span class="material-symbols-rounded"> arrow_forward </span></button>
+        </div>
+      </section>
+      <!-- members end -->
+
+      <section id="admission">
+        <h2>Admission information</h2>
+        <div class="admission__container">
+          <div class="admission__item">
+            <div class="admission__title">Entry details</div>
+            <p>Entry to the collection is free for everyone. Booking is recommended for exhibitions.</p>
+          </div>
+          <div class="admission__item">
+            <div class="admission__title">Exhibition Entry</div>
+            <ul>
+              <li>Members and Supporters enjoy free exhibition entry – no need to book, just turn up with your card.</li>
+              <li>Visitors with a disability pay a concessionary rate, and entrance for companions is free</li>
+              <li>Visitors aged 16–25 can join Tate Collective to access £5 exhibition tickets</li>
+              <li>Up to four children aged 11 and under go free per parent or guardian</li>
+              <li>£5 family child tickets are available for children aged 12–18 years</li>
+            </ul>
+            <p>For more information see our <a href="#" class="blue">Booking and Ticketing FAQs</a>.</p>
+          </div>
+          <div class="admission__item">
+            <div class="admission__title">Entrance</div>
+            <p>Entry is via the Turbine Hall ramp or via the Blavatnik Building.</p>
+          </div>
+          <div class="admission__item">
+            <div class="admission__title">Bag size policy</div>
+            <p>
+              Bags and items larger than cabin bag size (55cm x 40cm x 20cm) are not permitted in the building. Potentially dangerous objects are also
+              not permitted.
+            </p>
+          </div>
+          <div class="admission__item">
+            <div class="admission__title">Skateboards, scooters, and folding bike policy</div>
+            <p>
+              Bags and items larger than cabin bag size (55cm x 40cm x 20cm) are not permitted in the building. Potentially dangerous objects are also
+              not permitted.
+            </p>
+          </div>
+          <div class="admission__item">
+            <div class="admission__title">Security</div>
+            <p>
+              We take security very seriously and work closely with <a href="#" class="blue">Police Project Servator teams</a>. You can read more
+              about our approach to <a href="#" class="blue">safety and rules for the gallery</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- admission end -->
+
+      <section id="visiting">
+        <h2>Visiting tips</h2>
+        <ul class="visiting__container">
+          <li class="visiting__item">
+            <div class="visiting__img-container"><div class="visiting__text">Tate modern visual story</div></div>
+            <p>A step-by-step visual and written guide to help you plan your visit</p>
+          </li>
+          <li class="visiting__item">
+            <div class="visiting__img-container"><div class="visiting__text">Visit tate modern with your family</div></div>
+            <p>Plan your visit to Tate Modern with our family visiting tips and FAQs</p>
+          </li>
+          <li class="visiting__item">
+            <div class="visiting__img-container"><div class="visiting__text">School visits to tate modern</div></div>
+            <p>Explore art and ideas to take ownership of the gallery</p>
+          </li>
+          <li class="visiting__item">
+            <div class="visiting__img-container"><div class="visiting__text">A guide to slow looking</div></div>
+            <p>Be amazed by the discoveries you can make when you look for longer at art</p>
+          </li>
+          <li class="visiting__item">
+            <div class="visiting__img-container"><div class="visiting__text">Visiting tips for social care professionals</div></div>
+            <p>Information and resources to help social care professionals plan a visit to Tate</p>
+          </li>
+        </ul>
+      </section>
+      <!-- visitng end -->
+
+      <section id="venues">
+        <h2>In Tate Modern</h2>
+        <div class="venues__container--one">
+          <div class="venues__item--large">
+            <div class="venues__img-container"><div class="venues__text">Corner</div></div>
+          </div>
+          <div class="venues__item">
+            <div class="venues__img-container"><div class="venues__text">Terrace shop</div></div>
+            <div class="venues__img-container"><div class="venues__text">Tate draw</div></div>
+          </div>
+        </div>
+        <div class="venues__container--two">
+          <div class="venues__item">
+            <div class="venues__img-container"><div class="venues__text">Retaurant</div></div>
+            <div class="venues__img-container"><div class="venues__text">Level 1 members bar</div></div>
+          </div>
+          <div class="venues__item--large">
+            <div class="venues__img-container"><div class="venues__text">Granville-Grossman members bar</div></div>
+          </div>
+        </div>
+        <button class="btn" type="button">All food and drink venues<span class="material-symbols-rounded"> arrow_forward </span></button>
+      </section>
+      <!-- venues end -->
+
+      <section id="accessibility">
+        <h2>Accessibility</h2>
+        <div class="accessibility__container">
+          <nav class="accessibility__nav">
+            <ul>
+              <li><button type="button" aria-controls="content-accessible-car-parking">Accessible car parking</button></li>
+              <li><button type="button" aria-controls="entrance">Entrance</button></li>
+              <li><button type="button" aria-controls="wheelchair-mobility-scooter-provision">Wheelchair and mobility scooter provision</button></li>
+              <li><button type="button" aria-controls="facilities">Facilities and Tate Modern</button></li>
+              <li><button type="button" aria-controls="assistance-dogs">Assistance dogs</button></li>
+              <li><button type="button" aria-controls="autism">Autism</button></li>
+              <li><button type="button" aria-controls="blind-visually-impaired">Blind and visually impaired visitors</button></li>
+              <li><button type="button" aria-controls="deaf-hard-hearing">Deaf and hard of hearing visitors</button></li>
+              <li><button type="button" aria-controls="dyslexic">Dyslexic visitors</button></li>
+              <li><button type="button" aria-controls="epilepsy-seizures">Epilepsy and Seizures</button></li>
+              <li><button type="button" aria-controls="communication-cards">Communication cards</button></li>
+              <li><button type="button" aria-controls="access-events">Access events</button></li>
+              <li><button type="button" aria-controls="website">Website</button></li>
+              <li><button type="button" aria-controls="contact-us">Contact Us</button></li>
+            </ul>
+            <span>Banner image © Rikard Österlund</span>
+          </nav>
+          <div class="accessibility__content">
+            <article id="content-accessible-car-parking">
+              <h3>Accessible car parking</h3>
+              <p>
+                There are twelve parking spaces for disabled visitors, accessed via Park Street. Please book these spaces at least 24 hours in
+                advance.
+              </p>
+
+              <h4>To book accessible parking:</h4>
+              <ul>
+                <li>Email <a href="#" class="blue">ticketing@tate.org.uk</a></li>
+                <li>Call +44 (0)20 7887 8888 – option 1 (daily 10.30–17.00)</li>
+                <li class="unstyled">Our phone line supports the use of speech recognition apps</li>
+              </ul>
+
+              <p class="italic">
+                Your name, contact details, vehicle registration number, date and time of visit are required to make the booking for an accessible
+                parking space
+              </p>
+
+              <p>
+                Once you have parked, enter via the South Entrance of the Blavatnik Building across the level terrace, approximately 30 – 60 metres
+                from the parking spaces.
+              </p>
+
+              <p>
+                Two RADAR Key operated lifts link the South Entrance on Level 1 and the Ticket desks in the Turbine Hall. RADAR keys are available
+                from staff at the South Entrance on Level 1 and ticket desks on Level 0.
+              </p>
+
+              <p>If you have booked a mobility scooter or wheelchair, these can also be collected from the South Entrance.</p>
+            </article>
+            <article id="entrance">
+              <h3>Entrance</h3>
+              <p>Entrance is via the Turbine Hall or via the Blavatnik Building from Park Street.</p>
+            </article>
+            <article id="wheelchair-mobility-scooter-provision">
+              <h3>Wheelchair and mobility scooter provision</h3>
+              <p>
+                To borrow a wheelchair or walker you can either book in advance or ask a member of staff on arrival (subject to availability).
+                Reservation is free.
+              </p>
+
+              <p>
+                To borrow a mobility scooter please book at least 24 hours in advance of visiting. Reservation is free but you must have driven a
+                mobility scooter before.
+              </p>
+
+              <h4>To book:</h4>
+              <ul>
+                <li>Email <a href="#" class="blue">ticketing@tate.org.uk</a></li>
+                <li>Call +44 (0)20 7887 8888 – option 1 (daily 10.00–17.00)</li>
+                <li class="unstyled">Our phone line supports the use of speech recognition apps</li>
+              </ul>
+              <p class="italic">Your name, contact details, date and time of visit are required to make the booking</p>
+            </article>
+            <article id="facilities">
+              <h3>Facilities at Tate Modern</h3>
+              <div class="article__item">
+                <h4>Toilets</h4>
+                <p>Fully accessible toilets are located on every floor on the concourses.</p>
+                <p>
+                  A <a href="#" class="blue">Changing Places</a> toilet is available on Level 0 of the Natalie Bell Building. You can access the
+                  toilet using a RADAR key. RADAR keys are available from the tickets desk on Level 0 and from staff at the South entrance on Level 1.
+                </p>
+                <p>It offers:</p>
+                <ul>
+                  <li>Plenty of room for carers</li>
+                  <li>Full room coverage electric hoist equipment</li>
+                  <li>Height adjustable changing bench</li>
+                  <li>Paper roll</li>
+                  <li>Height adjustable wash hand basin</li>
+                  <li>Non-slip floor</li>
+                  <li>Privacy screen</li>
+                  <li>Seating</li>
+                </ul>
+              </div>
+              <div class="article__item">
+                <h4>Baby changing facilities</h4>
+                <ul>
+                  <li>The Baby Care Room is located on Level 0 Natalie Bell Building.</li>
+                  <li>Additional nappy-changing facilities are available in toilets on levels 0 to 5.</li>
+                </ul>
+              </div>
+              <div class="article__item">
+                <h4>Lifts</h4>
+                <ul>
+                  <li>
+                    There are four lifts in the Natalie Bell Building, by the main stairs on each floor. You can reach the lifts from the Turbine
+                    Hall. These lifts are being prioritised for people who are not able to use the stairs or escalators
+                  </li>
+                  <li>There are eight lifts in the Blavatnik Building, situated by the main stairs on each floor</li>
+                  <li>
+                    Two RADAR Key operated lifts link the South Entrance on Level 1 and the Ticket desks in the Turbine Hall on Level 0. RADAR keys
+                    are available from staff at the South Entrance on Level 1, and from the cloakroom and ticket desks on Level 0.
+                  </li>
+                </ul>
+              </div>
+              <div class="article__item">
+                <h4>Seating</h4>
+                <ul>
+                  <li>There are seats and benches throughout the gallery.</li>
+                  <li>
+                    Folding seats are available – just ask a member of staff or pick up a stool from the racks located on the concourses on levels 2,
+                    3 and 4.
+                  </li>
+                </ul>
+              </div>
+              <div class="article__item">
+                <h4>Water fountains</h4>
+                <p>Water Fountains are located next to the toilets in the Natalie Bell building on Levels 1, 2, 3 and 4.</p>
+                <p>There is also a water dispenser in the Espresso Bar in the Natalie Bell building on Level 3.</p>
+              </div>
+              <div class="article__item">
+                <h4>Food and Drink</h4>
+                <p>There are opportunities to buy food and drink at Tate Modern:</p>
+                <ul>
+                  <li>The <a href="#" class="blue">Espresso Bar</a> on Level 3 in the Natalie Bell Building</li>
+                  <li>The <a href="#" class="blue">Restaurant</a> on Level 6 in the Natalie Bell Building</li>
+                  <li>The <a href="#" class="blue">Terrace Café</a> on Level 1 in the Blavatnik Building</li>
+                </ul>
+              </div>
+              <div class="article__item">
+                <h4>Tate Modern shops</h4>
+                <p>There are opportunities to visit the shops at Tate Modern:</p>
+                <ul>
+                  <li>The <a href="#" class="blue">River Shop</a> on Level 1 in the Natalie Bell Building</li>
+                  <li>The <a href="#" class="blue">Terrace Shop</a> on Level 1 in the Blavatnik Building</li>
+                  <li>The <a href="#" class="blue">Turbine Hall Shop</a> on Level 0 in the Natalie Bell Building</li>
+                </ul>
+              </div>
+              <div class="article__item">
+                <h4>Member Facilities</h4>
+                <p>The Members Bar is located on Level 5 Natalie Bell Building, accessible by lift from Level 4.</p>
+              </div>
+              <div class="article__item">
+                <h4>Multi-Faith and Contemplation Room</h4>
+                <p>
+                  A multi-faith and contemplation room is available in the Natalie Bell Building on Level 4, off room 2 of the
+                  <a href="#" class="blue">Materials and Objects</a> display. This is a designated space for worship and prayer, as well as quiet and
+                  reflection. All are welcome to use this room.
+                </p>
+              </div>
+              <div class="article__item">
+                <p>We have two quiet rooms available:</p>
+                <ul>
+                  <li>
+                    A quiet room on Level 4 of the Natalie Bell Building can be accessed from Room 7 of
+                    <a href="#" class="blue">Materials and Objects</a>
+                  </li>
+                  <li>
+                    A quiet room on Level 2 of the Natalie Bell Building can be accessed from Room 4 of
+                    <a href="#" class="blue">Artist and Society</a>
+                  </li>
+                </ul>
+                <p>
+                  These rooms are for neurodiverse people, families or anyone who would like to spend some quiet time away from the gallery
+                  environment.
+                </p>
+              </div>
+            </article>
+            <article id="assistance-dogs">
+              <h3>Assistance dogs</h3>
+              <p>
+                We welcome guide dogs, hearing dogs and assistance dogs in the gallery. Drinking bowls are available at the Turbine Hall entrance –
+                just ask a member of staff.
+              </p>
+            </article>
+            <article id="autism">
+              <h3>Autism</h3>
+              <p>
+                To help plan your visit to Tate Modern, have a look at our visual story. It includes photographs and information of what you can
+                expect from a visit to the gallery.
+              </p>
+
+              <p>When you get to the gallery, ear defenders can be borrowed from the Ticket desks.</p>
+
+              <p>
+                A quiet room is available to use in the Natalie Bell Building on Level 4, off room 7 of the Materials and Objects display. This room
+                is for neurodiverse people, families or anyone who would like to spend some quiet time away from the gallery environment.
+              </p>
+
+              <p>Loud noises, flashing lights, smoke effects and strobe lighting feature in some artworks.</p>
+
+              <p>For more information before your visit contact us on:</p>
+              <ul>
+                <li>Email <a href="#" class="blue">Information@tate.org.uk</a></li>
+                <li>Call +44 (0)20 7887 8888 - option 1 (daily 10.00–17.00)</li>
+                <li class="unstyled">Our phone line supports the use of speech recognition apps</li>
+              </ul>
+            </article>
+            <article id="blind-visually-impaired">
+              <h3>Blind and visually impaired visitors</h3>
+              <h4>Large print guides</h4>
+              <p>Large print guides are available for all exhibitions.</p>
+
+              <p>You can access printed versions in the gallery:</p>
+              <ul>
+                <li>Ask a member of staff the exhibition entrance.</li>
+              </ul>
+
+              <p>You can access PDF versions on our website:</p>
+              <ul>
+                <li>
+                  Visit the relevant exhibition page and click on the blue box 'Read the exhibition guide'; click on the 'Download large print guide'
+                  button near the top of the page to read the guide or to save a copy to your device.
+                </li>
+              </ul>
+
+              <p>Large print captions are currently not available for the permanent collection.</p>
+
+              <h4>Magnifiers and Coloured Overlays</h4>
+              <p>Magnifiers and coloured overlays are from all exhibition entrances. Please ask a member of the team for more information.</p>
+            </article>
+            <article id="deaf-hard-hearing">
+              <h3>Hearing loops</h3>
+              <p>The ticket desks are fitted with a hearing loop.</p>
+            </article>
+            <article id="dyslexic">
+              <h3>Dyslexic visitors</h3>
+              <p>Coloured overlays and magnifiers are available. Ask a member of staff for more information.</p>
+              <p>Large print captions are available in all exhibitions. Ask a member of staff at the exhibition entrance.</p>
+            </article>
+            <article id="epilepsy-seizures">
+              <h3>Epilepsy and Seizures</h3>
+              <p>Loud noises, flashing lights, smoke effects and strobe lighting feature in some artworks.</p>
+
+              <p>For more information before your visit contact us on:</p>
+              <ul>
+                <li>Email <a href="#" class="blue">Information@tate.org.uk</a></li>
+                <li>Call +44 (0)20 7887 8888 - option 1 (daily 10.00–17.00)</li>
+                <li class="unstyled">Our phone line supports the use of speech recognition apps</li>
+              </ul>
+            </article>
+            <article id="communication-cards">
+              <h3>Communication cards</h3>
+              <p>Communication cards provide a means of visual, or nonverbal, communication.</p>
+
+              <p>
+                You can use our communication cards to ask for directions to facilities in the gallery. These include toilet, café, seating, shop,
+                quiet room, and exit. Show one of the cards to a member of Tate staff if you need to be shown to one of these places.
+              </p>
+
+              <p>
+                You can download these cards and print at home or save as a PDF on your portable device. There are two colour versions, with white or
+                yellow background. Use whichever version you find easiest to read.
+              </p>
+
+              <ul>
+                <li><a href="#" class="blue">Print at home communication cards (white) 36.22 Kb</a></li>
+                <li><a href="#" class="blue">Print at home communication cards (yellow) 35.96 Kb</a></li>
+                <li><a href="#" class="blue">Digital communication cards (white) 36.65 Kb</a></li>
+                <li><a href="#" class="blue">Digital communication cards (yellow) 39.41 Kb</a></li>
+              </ul>
+
+              <p class="italic">
+                Tate is grateful to Anna Farley who initiated and championed the development of these communication cards. Anna is an autistic artist
+                who makes work exploring her autism, UK disability culture and inclusion.
+              </p>
+            </article>
+            <article id="access-events">
+              <h3>Accesss events</h3>
+              <p>
+                <a href="#" class="blue">Touch Tours</a> of the Tate Modern collection can be booked for free by calling 020 7887 8888 (10.00–17.00
+                daily)
+              </p>
+              <p>BSL interpretation, captioning and audio descriptions are offered at events where possible</p>
+              <button class="btn black-border">
+                View all upcoming access events at Tate Modern<span class="material-symbols-rounded"> arrow_forward </span>
+              </button>
+            </article>
+            <article id="website">
+              <h3>Website</h3>
+              <p>You can find the <a href="#" class="blue">accessibility statement for our website here</a>.</p>
+            </article>
+            <article id="contact-us">
+              <h3>Contact Us</h3>
+              <p>For queries about:</p>
+              <ul>
+                <li>mobility scooter reservations</li>
+                <li>wheelchair reservations</li>
+                <li>accessible car park reservations</li>
+                <li>membership and ticketing services</li>
+              </ul>
+              <p>Email <a href="#" class="blue">ticketing@tate.org.uk</a></p>
+              <p>Call +44 (0)20 7887 8888 – option 1 (daily 10.00–17.00)</p>
+
+              <p>For queries about:</p>
+              <ul>
+                <li>general information to plan your visit</li>
+              </ul>
+              <p>Email <a href="#" class="blue">information@tate.org.uk</a></p>
+              <p>Call +44 (0)20 7887 8888 – option 1 (daily 10.00–17.00)</p>
+              <p>Our phone line supports the use of speech recognition apps</p>
+              <p>We want to make sure that all our galleries are welcoming and accessible, your feedback will helps us to continue improving.</p>
+              <p>
+                If you would like to leave us a comment about your visit or your experience of our website you can send your thoughts to us in the
+                email templates below:
+              </p>
+              <ul>
+                <li><a href="#" class="blue">Accessibility at Tate Britain</a></li>
+                <li><a href="#" class="blue">Website feedback</a></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- accessibility end -->
     </main>
+    <footer id="footer">
+      <section class="footer__container--one">
+        <section id="about">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our collection</a></li>
+            <li><a href="#">Terms and copyright</a></li>
+            <li><a href="#">Governance</a></li>
+            <li><a href="#">Picture library</a></li>
+            <li><a href="#">ARITST ROOMS</a></li>
+            <li><a href="#">Tate Kids</a></li>
+          </ul>
+        </section>
+
+        <section id="support">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#" class="gray">Tate Collective</a></li>
+            <li><a href="#" class="gray">Members</a></li>
+            <li><a href="#" class="gray">Patrons</a></li>
+            <li><a href="#" class="gray">Donate</a></li>
+            <li><a href="#" class="gray">Corporate</a></li>
+            <li><a href="#" class="gray">My account</a></li>
+          </ul>
+        </section>
+
+        <section id="join-in">
+          <h3>Join in</h3>
+          <ul class="external-links">
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </li>
+          </ul>
+          <form action="#">
+            <h3>Sign up to emails</h3>
+            <input type="email" placeholder="Email address" />
+            <p>
+              This site is protected by reCAPTCHA and the Google <a href="#" class="gray">Privacy Policy</a> and
+              <a href="#" class="gray">Terms of Service</a> apply.
+            </p>
+            <p>Tate’s <a href="#" class="gray">privacy policy</a></p>
+            <button type="submit" class="footer__btn">Submit</button>
+          </form>
+        </section>
+      </section>
+      <section id="footer__container--two">
+        <div class="branding">
+          <img src="./images/tate-logo.svg" alt="tate logo" />
+          <p>
+            © The Board of Trustees of the Tate Gallery, 2025
+            <br />
+            All rights reserved
+          </p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#" class="gray">Press</a></li>
+            <li><a href="#" class="gray">Jobs</a></li>
+            <li><a href="#" class="gray">Accessibility</a></li>
+            <li><a href="#" class="gray">Privacy</a></li>
+            <li><a href="#" class="gray">Cookies</a></li>
+            <li><a href="#" class="gray">Contact</a></li>
+          </ul>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
