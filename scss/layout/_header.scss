@@ -1,0 +1,50 @@
+#header {
+  display: flex;
+  position: relative;
+  height: 7rem;
+  padding: 0 15rem;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  .gnb-main__left ul {
+    display: flex;
+    align-items: center;
+    li:not(:last-child) {
+      margin-right: 4rem;
+    }
+    li {
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      a {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .gnb-main__right ul {
+    display: flex;
+    align-items: center;
+    li:not(:last-child) {
+      margin-right: 2rem;
+    }
+    .member-btn {
+      padding: 1rem;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background-color: $blue-light;
+    }
+  }
+}

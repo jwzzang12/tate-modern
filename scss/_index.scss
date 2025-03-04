@@ -1,0 +1,207 @@
+#hero {
+  height: calc(100vh - 7rem);
+  background-image: url('../images/tate_modern_bg.jpg');
+  background-size: 110%;
+  background-position: 25% 25%;
+  .hero__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 3rem;
+    color: #fff;
+    background-color: $gray-dark;
+  }
+  .hero__item {
+    span {
+      line-height: 2;
+      letter-spacing: 1px;
+    }
+    h1 {
+      margin: 3rem 0;
+      font-size: 6rem;
+      letter-spacing: 7px;
+    }
+    h2 {
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      text-align: left;
+    }
+  }
+}
+
+#nav-sticky ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 15rem;
+  background-color: $gray-light;
+}
+
+#explore {
+  display: flex;
+  .explore__content {
+    margin-right: 5rem;
+    flex: 0 0 60%;
+  }
+  .explore__heading {
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  .explore__artwork {
+    background-color: $gray-light;
+    img {
+      width: 100%;
+    }
+  }
+  .explore__artwork-info {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    color: $gray-dark;
+  }
+}
+
+#exhibition {
+  .exhibition__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .exhibition__item {
+    width: 32%;
+    img {
+      width: 100%;
+    }
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+  .exhibition__mark {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid $gray-medium;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: $gray-dark;
+    text-transform: uppercase;
+  }
+  .exhibition__title {
+    font-size: 2rem;
+  }
+  .exibiton__desc {
+    color: $gray-dark;
+  }
+  .exhibition__info > div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    .material-symbols-rounded {
+      padding-right: 5px;
+      font-size: 1.8rem;
+    }
+    span {
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#collection {
+  .collection__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .collection__item {
+    width: 24%;
+    img {
+      width: 100%;
+    }
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+  .collection__mark {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .collection__title {
+    font-size: 2rem;
+  }
+  .exibiton__desc {
+    color: $gray-dark;
+  }
+  .collection__tour {
+    width: 24%;
+    height: 199%;
+    padding: 2rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: $blue;
+    .collection__tour__heading {
+      padding-bottom: 7rem;
+      font-size: 2.8rem;
+    }
+    .collection__tour__btn {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2rem;
+      border-top: 1px solid #fff;
+    }
+  }
+}
+
+#members {
+  .members__container {
+    background-color: #751515;
+    padding: 5rem 0;
+  }
+  .members__container__heading {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  .members__btn {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background-color: $gray-light;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
+
+#admission {
+  .admission__wrapper {
+    display: flex;
+  }
+  .admission__container--one {
+    flex: 0 0 60%;
+    margin-right: 10rem;
+  }
+
+  .admission__item > * {
+    margin-bottom: 3rem;
+  }
+  .admission__title {
+    font-size: 2rem;
+    &.uppercase {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+  .admission__item ul {
+    list-style: disc;
+    padding: 0 3rem;
+  }
+}

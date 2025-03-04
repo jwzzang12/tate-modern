@@ -1,0 +1,86 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $base-font;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $font-color;
+  word-spacing: 1px;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.material-symbols-rounded {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-rounded.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+main > section {
+  padding: 3rem 15rem;
+  h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 auto 4rem;
+    text-align: center;
+  }
+}
+
+.btn {
+  background-color: $gray-light;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  &.black-border {
+    border: 1px solid $font-color;
+    background-color: transparent;
+  }
+  span {
+    color: $blue;
+    margin-left: 5px;
+  }
+}
+
+.blue {
+  border-bottom: 1px solid $blue;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.gray {
+  border-bottom: 1px solid $gray-medium;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
