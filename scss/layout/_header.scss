@@ -17,9 +17,13 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  .gnb-main__left ul {
+  .gnb-main__left {
+    height: 100%;
+  }
+  .gnb-main__left > ul {
     display: flex;
     align-items: center;
+    height: 100%;
     li:not(:last-child) {
       margin-right: 4rem;
     }
@@ -27,6 +31,9 @@
       color: $gray-dark;
     }
     li {
+      display: flex;
+      align-items: center;
+      height: 100%;
       font-size: 1.6rem;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -34,13 +41,21 @@
         display: flex;
         align-items: center;
       }
+      &:hover {
+        color: $gray-dark;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
-  .gnb-main__right ul {
+  .gnb-main__right > ul {
     display: flex;
     align-items: center;
-    li:not(:last-child) {
+    .search-btn {
       margin-right: 2rem;
+      &:hover span {
+        color: $gray-dark;
+        transition: color 0.3s ease-in-out;
+      }
     }
     .member-btn {
       padding: 1rem;
@@ -50,4 +65,51 @@
       background-color: $blue-light;
     }
   }
+}
+
+.art-dropdown {
+  display: none;
+  justify-content: space-between;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  padding: 3rem 15rem;
+  background-color: $gray-light;
+
+  .dept__heading {
+    height: auto !important;
+    margin-bottom: 1rem;
+    font-size: 1.3rem !important;
+    color: $gray-dark;
+  }
+
+  li:not(:first-child) {
+    height: auto !important;
+    letter-spacing: normal !important;
+    text-transform: none !important;
+  }
+
+  a {
+    color: $font-color;
+  }
+
+  li:hover a {
+    color: $gray-dark;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.art:hover .art-dropdown {
+  display: flex;
+}
+
+.art:hover .material-symbols-rounded {
+  color: $gray-dark;
+  transform: rotate(180deg);
+}
+
+.art .material-symbols-rounded {
+  transition: all 0.3s ease-in-out;
 }

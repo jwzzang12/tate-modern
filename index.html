@@ -22,8 +22,34 @@
         <div class="gnb-main__left">
           <ul>
             <li><a href="#">What's on</a></li>
-            <li>
+            <li class="art">
               <a href="#">Art<span class="material-symbols-rounded" aria-hidden="true"> keyboard_arrow_down </span></a>
+              <div class="art-dropdown">
+                <ul class="art__dept">
+                  <li class="dept__heading">The collection</li>
+                  <li><a href="#">Artists</a></li>
+                  <li><a href="#">Artwork</a></li>
+                  <li><a href="#">Art by theme</a></li>
+                </ul>
+                <ul class="art__dept">
+                  <li class="dept__heading">Media</li>
+                  <li><a href="#">Videos</a></li>
+                  <li><a href="#">Podcasts</a></li>
+                  <li><a href="#">Short articles</a></li>
+                </ul>
+                <ul class="art__dept">
+                  <li class="dept__heading">Learning</li>
+                  <li><a href="#">Schools</a></li>
+                  <li><a href="#">Art Terms</a></li>
+                  <li><a href="#">Tate Research</a></li>
+                </ul>
+                <ul class="art__dept">
+                  <li class="dept__heading">Art making</li>
+                  <li><a href="#">Create like an artist</a></li>
+                  <li><a href="#">Kids art activities</a></li>
+                  <li><a href="#">Tate Darw game</a></li>
+                </ul>
+              </div>
             </li>
             <li><a href="#">Visit</a></li>
             <li><a href="#">Shop</a></li>
@@ -31,7 +57,7 @@
         </div>
         <div class="gnb-main__right">
           <ul>
-            <li>
+            <li class="search-btn">
               <a href="#"><span class="material-symbols-rounded" title="search"> search </span></a>
             </li>
             <li class="member-btn"><a href="#">Become a member</a></li>
@@ -60,12 +86,12 @@
 
       <nav id="nav-sticky">
         <ul>
-          <li><a href="#">What's on</a></li>
-          <li><a href="#">Visit the free collection</a></li>
-          <li><a href="#">Admission information</a></li>
-          <li><a href="#">Visiting tips</a></li>
-          <li><a href="#">In Tate Modern</a></li>
-          <li><a href="#">Accessibility</a></li>
+          <li><a href="#exhibition">What's on</a></li>
+          <li><a href="#collection">Visit the free collection</a></li>
+          <li><a href="#admission">Admission information</a></li>
+          <li><a href="#visiting">Visiting tips</a></li>
+          <li><a href="#venues">In Tate Modern</a></li>
+          <li><a href="#accessibility">Accessibility</a></li>
         </ul>
       </nav>
       <!-- sticky nav end -->
@@ -147,7 +173,6 @@
             <div class="exhibition__title">Electric Dreams: Art and Technology Before the Internet</div>
             <p class="exibiton__desc">Enter a dreamscape of machines, movement, and captivating installations that play with your perception</p>
             <div class="exhibition__info">
-              <span class="material-symbols-rounded" aria-hidden="true"> location_on </span>
               <div class="exhibition__location">
                 <span class="material-symbols-rounded" aria-hidden="true"> location_on </span>
                 <span>Tate Modern</span>
@@ -658,13 +683,13 @@
         <section id="about">
           <h3>About</h3>
           <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Our collection</a></li>
-            <li><a href="#">Terms and copyright</a></li>
-            <li><a href="#">Governance</a></li>
-            <li><a href="#">Picture library</a></li>
-            <li><a href="#">ARITST ROOMS</a></li>
-            <li><a href="#">Tate Kids</a></li>
+            <li><a href="#" class="gray">About us</a></li>
+            <li><a href="#" class="gray">Our collection</a></li>
+            <li><a href="#" class="gray">Terms and copyright</a></li>
+            <li><a href="#" class="gray">Governance</a></li>
+            <li><a href="#" class="gray">Picture library</a></li>
+            <li><a href="#" class="gray">ARITST ROOMS</a></li>
+            <li><a href="#" class="gray">Tate Kids</a></li>
           </ul>
         </section>
 
@@ -711,7 +736,7 @@
           </form>
         </section>
       </section>
-      <section id="footer__container--two">
+      <section class="footer__container--two">
         <div class="branding">
           <img src="./images/tate-logo.svg" alt="tate logo" draggable="false" loading="lazy" />
           <p>

@@ -4,12 +4,12 @@
   background-size: 110%;
   background-position: 25% 25%;
   .hero__content {
-    @include flexColumn;
     width: 60%;
     height: 100%;
     padding: 3rem;
     color: $white;
     background-color: $gray-dark;
+    @include flexColumn;
   }
   .hero__item {
     span {
@@ -29,6 +29,12 @@
   }
 }
 
+#nav-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 #nav-sticky ul {
   display: flex;
   justify-content: space-evenly;
@@ -36,6 +42,9 @@
   width: 100%;
   padding: 1rem 15rem;
   background-color: $gray-light;
+  li {
+    transition: color 0.3s ease-in-out;
+  }
 }
 
 #explore {
@@ -77,6 +86,15 @@
     & > * {
       margin-bottom: 1rem;
     }
+    &:hover .exhibition__img-container {
+      filter: brightness(0.7);
+    }
+    &:hover .exhibition__title {
+      color: $blue;
+    }
+  }
+  .exhibition__img-container {
+    transition: filter 0.3s ease-in-out;
   }
   .exhibition__mark {
     display: inline-block;
@@ -89,6 +107,7 @@
   }
   .exhibition__title {
     font-size: 2rem;
+    transition: color 0.3s ease-in-out;
   }
   .exibiton__desc {
     color: $gray-dark;
@@ -122,14 +141,28 @@
     & > * {
       margin-bottom: 1rem;
     }
+    &:hover .collection__img-container {
+      filter: brightness(0.7);
+    }
+    &:hover .collection__title {
+      color: $blue;
+    }
+    &:hover .collection__mark {
+      color: $blue;
+    }
+  }
+  .collection__img-container {
+    transition: filter 0.3s ease-in-out;
   }
   .collection__mark {
     font-size: 1.3rem;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
   }
   .collection__title {
     font-size: 2rem;
+    transition: color 0.3s ease-in-out;
   }
   .exibiton__desc {
     color: $gray-dark;
@@ -157,7 +190,7 @@
 #members {
   .members__container {
     padding: 5rem 0;
-    background-color: #751515;
+    background: linear-gradient(20deg, #40409c 50%, #d14937 50%);
   }
   .members__container__heading {
     margin-bottom: 3rem;
@@ -173,8 +206,12 @@
     margin: 0 auto;
     padding: 1rem 1.5rem;
     background-color: $gray-light;
+    transition: background-color 0.3s ease-in-out;
     span {
       margin-left: 5px;
+    }
+    &:hover {
+      background-color: $gray-medium;
     }
   }
 }
@@ -243,8 +280,8 @@
     }
   }
   .venues__item {
-    @include flexColumn;
     width: 34%;
+    @include flexColumn;
     .venues__img-container {
       height: 47%;
     }
@@ -263,12 +300,15 @@
     display: flex;
   }
   .accessibility__nav {
-    @include flexColumn;
     width: 60%;
     margin-right: 30px;
+    @include flexColumn;
     li {
       padding: 0.5rem 1.5rem 0;
       border-bottom: 1px solid $gray-medium;
+      &:hover {
+        color: $blue;
+      }
     }
   }
   button {
@@ -290,8 +330,8 @@
       font-size: 2rem;
     }
     ul {
-      list-style: disc;
       padding-left: 3rem;
+      list-style: disc;
     }
   }
 }
