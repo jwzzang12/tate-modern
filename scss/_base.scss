@@ -13,9 +13,9 @@ body {
   font-family: $base-font;
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.5;
   color: $font-color;
   word-spacing: 1px;
-  line-height: 1.5;
 }
 
 a {
@@ -44,26 +44,26 @@ a {
 main > section {
   padding: 3rem 15rem;
   h2 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
     margin: 0 auto 4rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
     text-align: center;
+    text-transform: uppercase;
   }
 }
 
 .btn {
-  background-color: $gray-light;
-  padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: $gray-light;
   &.black-border {
     border: 1px solid $font-color;
     background-color: transparent;
   }
   span {
-    color: $blue;
     margin-left: 5px;
+    color: $blue;
   }
 }
 

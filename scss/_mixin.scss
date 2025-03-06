@@ -1,0 +1,19 @@
+@mixin coverText {
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}

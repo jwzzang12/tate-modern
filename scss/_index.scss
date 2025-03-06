@@ -4,13 +4,11 @@
   background-size: 110%;
   background-position: 25% 25%;
   .hero__content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    @include flexColumn;
     width: 60%;
     height: 100%;
     padding: 3rem;
-    color: #fff;
+    color: $white;
     background-color: $gray-dark;
   }
   .hero__item {
@@ -141,7 +139,7 @@
     height: 199%;
     padding: 2rem;
     font-weight: 500;
-    color: #fff;
+    color: $white;
     background-color: $blue;
     .collection__tour__heading {
       padding-bottom: 7rem;
@@ -151,23 +149,23 @@
       display: flex;
       justify-content: space-between;
       padding-top: 2rem;
-      border-top: 1px solid #fff;
+      border-top: 1px solid $white;
     }
   }
 }
 
 #members {
   .members__container {
-    background-color: #751515;
     padding: 5rem 0;
+    background-color: #751515;
   }
   .members__container__heading {
+    margin-bottom: 3rem;
     font-size: 4rem;
     letter-spacing: 5px;
     text-align: center;
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
-    margin-bottom: 3rem;
   }
   .members__btn {
     display: flex;
@@ -186,8 +184,8 @@
     display: flex;
   }
   .admission__container--one {
-    flex: 0 0 60%;
     margin-right: 10rem;
+    flex: 0 0 60%;
   }
 
   .admission__item > * {
@@ -196,12 +194,104 @@
   .admission__title {
     font-size: 2rem;
     &.uppercase {
-      text-transform: uppercase;
       letter-spacing: 2px;
+      text-transform: uppercase;
     }
   }
   .admission__item ul {
-    list-style: disc;
     padding: 0 3rem;
+    list-style: disc;
+  }
+}
+
+#visiting {
+  .visiting__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .visiting__item {
+    width: 19%;
+  }
+  .visiting__img-container {
+    height: 200px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #832b2b;
+    @include flexCenter;
+  }
+  .visiting__text {
+    @include coverText;
+  }
+  p {
+    color: $gray-dark;
+  }
+}
+
+#venues {
+  .venues__container--one,
+  .venues__container--two {
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  .venues__item--large {
+    width: 64%;
+    background-color: #de4040;
+    .venues__img-container {
+      height: 100%;
+    }
+  }
+  .venues__item {
+    @include flexColumn;
+    width: 34%;
+    .venues__img-container {
+      height: 47%;
+    }
+  }
+  .venues__img-container {
+    background-color: #de4040;
+    @include flexCenter;
+  }
+  .venues__text {
+    @include coverText;
+  }
+}
+
+#accessibility {
+  .accessibility__container {
+    display: flex;
+  }
+  .accessibility__nav {
+    @include flexColumn;
+    width: 60%;
+    margin-right: 30px;
+    li {
+      padding: 0.5rem 1.5rem 0;
+      border-bottom: 1px solid $gray-medium;
+    }
+  }
+  button {
+    text-align: left;
+  }
+  .accessibility__content article > * {
+    margin-bottom: 3rem;
+  }
+
+  .article__item > * {
+    margin-bottom: 1rem;
+  }
+
+  .accessibility__content {
+    h3 {
+      font-size: 2.4rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 3rem;
+    }
   }
 }
