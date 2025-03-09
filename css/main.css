@@ -41,7 +41,8 @@ img {
 }
 
 main > section {
-  padding: 3rem 15rem;
+  position: relative;
+  padding: 5rem 15rem;
 }
 main > section h2 {
   margin: 0 auto 4rem;
@@ -54,11 +55,15 @@ main > section h2 {
 .btn {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 15rem;
   padding: 1.5rem 2rem;
   background-color: #f8f8f8;
   transition: background-color 0.3s ease-in-out;
 }
 .btn.black-border {
+  position: static;
+  right: auto;
   border: 1px solid #1a1a1a;
   background-color: transparent;
 }
@@ -285,7 +290,7 @@ main > section h2 {
 #exhibition .exhibition__item img {
   width: 100%;
 }
-#exhibition .exhibition__item > * {
+#exhibition .exhibition__item a > * {
   margin-bottom: 1rem;
 }
 #exhibition .exhibition__item:hover .exhibition__img-container {
@@ -338,7 +343,7 @@ main > section h2 {
 #collection .collection__item img {
   width: 100%;
 }
-#collection .collection__item > * {
+#collection .collection__item a > * {
   margin-bottom: 1rem;
 }
 #collection .collection__item:hover .collection__img-container {
@@ -441,16 +446,38 @@ main > section h2 {
 #visiting .visiting__item {
   width: 19%;
 }
+#visiting .visiting__item:hover .visiting__img-container::before {
+  opacity: 0.9;
+}
 #visiting .visiting__img-container {
+  position: relative;
   height: 200px;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  background-color: #832b2b;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#visiting .visiting__img-container img {
+  position: absolute;
+  height: 100%;
+  filter: brightness(0.5);
+}
+#visiting .visiting__img-container::before {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 200px;
+  background-color: #0070cc;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  content: "";
+}
 #visiting .visiting__text {
+  z-index: 5;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -470,10 +497,12 @@ main > section h2 {
 }
 #venues .venues__item--large {
   width: 64%;
-  background-color: #de4040;
 }
 #venues .venues__item--large .venues__img-container {
   height: 100%;
+}
+#venues .venues__item--large .venues__img-container:hover::before {
+  opacity: 0.9;
 }
 #venues .venues__item {
   width: 34%;
@@ -481,16 +510,47 @@ main > section h2 {
   justify-content: space-between;
   flex-direction: column;
 }
-#venues .venues__item .venues__img-container {
+#venues .venues__item a {
   height: 47%;
 }
+#venues .venues__item .venues__img-container {
+  height: 100%;
+}
+#venues .venues__item .venues__img-container:hover::before {
+  opacity: 0.9;
+}
 #venues .venues__img-container {
-  background-color: #de4040;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#venues .venues__img-container a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#venues .venues__img-container img {
+  position: absolute;
+  width: 100%;
+  filter: brightness(0.5);
+}
+#venues .venues__img-container::before {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #0070cc;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  content: "";
+}
 #venues .venues__text {
+  z-index: 5;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -502,11 +562,14 @@ main > section h2 {
   display: flex;
 }
 #accessibility .accessibility__nav {
-  width: 60%;
+  width: 25%;
   margin-right: 30px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+#accessibility .accessibility__nav ul {
+  margin-bottom: 2rem;
 }
 #accessibility .accessibility__nav li {
   padding: 0.5rem 1.5rem 0;
@@ -518,11 +581,17 @@ main > section h2 {
 #accessibility button {
   text-align: left;
 }
+#accessibility .accessibility__content article {
+  display: none;
+}
 #accessibility .accessibility__content article > * {
   margin-bottom: 3rem;
 }
 #accessibility .article__item > * {
   margin-bottom: 1rem;
+}
+#accessibility .accessibility__content {
+  flex: 1;
 }
 #accessibility .accessibility__content h3 {
   font-size: 2.4rem;

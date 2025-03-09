@@ -41,7 +41,8 @@ img {
 }
 
 main > section {
-  padding: 3rem 15rem;
+  position: relative;
+  padding: 5rem 15rem;
   h2 {
     margin: 0 auto 4rem;
     font-size: 4rem;
@@ -54,10 +55,14 @@ main > section {
 .btn {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 15rem;
   padding: 1.5rem 2rem;
   background-color: $gray-light;
   transition: background-color 0.3s ease-in-out;
   &.black-border {
+    position: static;
+    right: auto;
     border: 1px solid $font-color;
     background-color: transparent;
   }
