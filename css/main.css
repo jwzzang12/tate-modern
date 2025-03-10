@@ -1,3 +1,13 @@
+::-moz-selection {
+  color: #fff;
+  background-color: #0070cc;
+}
+
+::selection {
+  color: #fff;
+  background-color: #0070cc;
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -160,6 +170,10 @@ main > section h2 {
   letter-spacing: 2px;
   text-transform: uppercase;
   background-color: #85dee7;
+  transition: background-color 0.2s ease-in-out;
+}
+#gnb .gnb-main__right > ul .member-btn:hover {
+  background-color: rgba(133, 221, 231, 0.7);
 }
 
 .art-dropdown {
@@ -373,7 +387,6 @@ main > section h2 {
 }
 #collection .collection__tour {
   width: 24%;
-  height: 199%;
   padding: 2rem;
   font-weight: 500;
   color: #fff;
@@ -470,19 +483,19 @@ main > section h2 {
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: 200px;
   background-color: #0070cc;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   content: "";
+  height: 200px;
 }
 #visiting .visiting__text {
   z-index: 5;
+  font-size: 2rem;
+  letter-spacing: 2px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 2rem;
 }
 #visiting p {
   color: rgba(0, 0, 0, 0.5);
@@ -543,19 +556,19 @@ main > section h2 {
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: 100%;
   background-color: #0070cc;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
   content: "";
+  height: 100%;
 }
 #venues .venues__text {
   z-index: 5;
+  font-size: 2rem;
+  letter-spacing: 2px;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 2rem;
 }
 
 #accessibility .accessibility__container {
@@ -646,6 +659,10 @@ main > section h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.2s ease-in-out;
+}
+#join-in .external-links .fa-brands:hover {
+  background-color: #005194;
 }
 #join-in input {
   width: 95%;
@@ -670,6 +687,10 @@ main > section h2 {
   padding: 1.5rem 2rem;
   color: #fff;
   background-color: #0070cc;
+  transition: background-color 0.2s ease-in-out;
+}
+.footer__btn:hover {
+  background-color: #005194;
 }
 
 .branding img {

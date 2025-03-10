@@ -35,7 +35,11 @@
       color: $white;
       background-color: $blue;
       vertical-align: top;
-      @include flexCenter;
+      @include flex-center;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: $blue-dark;
+      }
     }
   }
   input {
@@ -62,6 +66,10 @@
   padding: 1.5rem 2rem;
   color: $white;
   background-color: $blue;
+  transition: background-color 0.2s ease-in-out;
+  &:hover {
+    background-color: $blue-dark;
+  }
 }
 
 .branding {

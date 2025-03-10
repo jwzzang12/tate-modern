@@ -63,6 +63,10 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       background-color: $blue-light;
+      transition: background-color 0.2s ease-in-out;
+      &:hover {
+        background-color: rgba(133, 221, 231, 0.7);
+      }
     }
   }
 }
