@@ -1,0 +1,23 @@
+#admission {
+  .admission__wrapper {
+    display: flex;
+  }
+  .admission__container--one {
+    margin-right: 10rem;
+    flex: 0 0 60%;
+  }
+  .admission__item > * {
+    margin-bottom: 3rem;
+  }
+  .admission__title {
+    font-size: 2rem;
+    &.uppercase {
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  }
+  .admission__item ul {
+    padding: 0 3rem;
+    list-style: disc;
+  }
+}

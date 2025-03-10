@@ -2,5 +2,14 @@
 @import 'mixin';
 @import 'base';
 @import './layout/header';
-@import 'index';
+@import './components/hero';
+@import './components/nav';
+@import './components/explore';
+@import './components/exhibition';
+@import './components/collection';
+@import './components/members';
+@import './components/admission';
+@import './components/visiting';
+@import './components/venues';
+@import './components/accessibility';
 @import './layout/footer';

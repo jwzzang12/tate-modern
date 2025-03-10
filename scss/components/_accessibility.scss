@@ -1,0 +1,45 @@
+#accessibility {
+  .accessibility__container {
+    display: flex;
+  }
+  .accessibility__nav {
+    width: 25%;
+    margin-right: 30px;
+    @include flex-column;
+    ul {
+      margin-bottom: 2rem;
+    }
+    li {
+      padding: 0.5rem 1.5rem 0;
+      border-bottom: 1px solid $gray-medium;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  button {
+    text-align: left;
+  }
+  .accessibility__content article {
+    display: none;
+  }
+  .accessibility__content article > * {
+    margin-bottom: 3rem;
+  }
+  .article__item > * {
+    margin-bottom: 1rem;
+  }
+  .accessibility__content {
+    flex: 1;
+    h3 {
+      font-size: 2.4rem;
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    ul {
+      padding-left: 3rem;
+      list-style: disc;
+    }
+  }
+}

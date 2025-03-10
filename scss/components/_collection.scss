@@ -1,0 +1,57 @@
+#collection {
+  .collection__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .collection__item {
+    width: 24%;
+    img {
+      width: 100%;
+    }
+    a > * {
+      margin-bottom: 1rem;
+    }
+    &:hover .collection__img-container {
+      filter: brightness(0.7);
+    }
+    &:hover .collection__title {
+      color: $blue;
+    }
+    &:hover .collection__mark {
+      color: $blue;
+    }
+  }
+  .collection__img-container {
+    transition: filter 0.3s ease-in-out;
+  }
+  .collection__mark {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+  }
+  .collection__title {
+    font-size: 2rem;
+    transition: color 0.3s ease-in-out;
+  }
+  .exibiton__desc {
+    color: $gray-dark;
+  }
+  .collection__tour {
+    width: 24%;
+    padding: 2rem;
+    font-weight: 500;
+    color: $white;
+    background-color: $blue;
+    .collection__tour__heading {
+      padding-bottom: 7rem;
+      font-size: 2.8rem;
+    }
+    .collection__tour__btn {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2rem;
+      border-top: 1px solid $white;
+    }
+  }
+}

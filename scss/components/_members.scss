@@ -1,0 +1,28 @@
+#members {
+  .members__container {
+    padding: 5rem 0;
+    background: linear-gradient(20deg, #40409c 50%, #d14937 50%);
+  }
+  .members__container__heading {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+  .members__btn {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    background-color: $gray-light;
+    transition: background-color 0.3s ease-in-out;
+    span {
+      margin-left: 5px;
+    }
+    &:hover {
+      background-color: $gray-medium;
+    }
+  }
+}

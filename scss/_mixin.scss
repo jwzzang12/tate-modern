@@ -1,19 +1,31 @@
-@mixin coverText {
+@mixin cover-text {
+  z-index: 5;
+  font-size: 2rem;
+  letter-spacing: 2px;
   text-align: center;
   color: $white;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 2rem;
 }
 
-@mixin flexCenter {
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flexColumn {
+@mixin flex-column {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+@mixin blue-before-pseudo {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background-color: $blue;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  content: '';
 }
